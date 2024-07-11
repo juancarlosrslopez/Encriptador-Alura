@@ -5,3 +5,5 @@
 Para ejecutar el sistema, debes poner:
 
 ```npm install next react```
+
+Programa Encriptador v1.0
