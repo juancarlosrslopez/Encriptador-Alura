@@ -11,16 +11,20 @@
             <img class="imagen"  src="./assets/Logo.png" alt="Logo de Alura LATAM">
     </header>
     <main class="presentacion">
-        <section class="presentacion_contenido">
-             <p class="presentacion_contenido_titulo">
-                Ingrese el texto aqui
-             </p>
-                <textarea id="texto" class="textarea"></textarea>
+        <section>
+            <textarea class="entrada" id="entradaUsuario" name="entradaUsuario" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="nota"><img src="./assets/bi_exclamation-circle-fill.png" alt="Signo Exclamacion"> Solo letras minúsculas y sin acentos</p>
             <div class="accion">
-                <button class="boton_1">Encriptar</button>
-                <button class="boton_2">Desencriptar</button>
-             </div>
+                <button class="boton_1" id="encriptar">Encriptar</button>
+                <button class="boton_2" id="desencriptar">Desencriptar</button>
+            </div>
         </section>
+        <div class="textbox" id="textbox">
+            <img class="image" src="./assets/Muñeco.png" alt="Imagen Muñeco">
+            <p class="parrafo_1"><b>Ningún mensaje fue encontrado</b></p>
+            <p class="parrafo_2">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

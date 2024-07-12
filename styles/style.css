@@ -1,100 +1,154 @@
-/* Estilos del Programa Encriptador*/
+/* Estilos del Programa Encriptador */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --color-primario:#E6F1FD;
-    --color-secundario:#0A3871;
-    --color-terciario:#D8DFE8;
-    --color-cuarto:#FDFDFDFD;
+    --color-primario: #E6F1FD;
+    --color-secundario: #0A3871;
+    --color-terciario: #D8DFE8;
+    --color-cuarto: #FDFDFDFD;
+    --color-quinto: #495057;
 
     --fuente-inter: "Inter", sans-serif;
-
 }
 
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-body{
+body {
     box-sizing: border-box;
     background-color: var(--color-primario);
 }
 
 .imagen {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 40px;
 }
 
 .presentacion {
-    padding: 5% 15%;
+    padding: 4% 13%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.presentacion__contenido{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.entrada {
+    width: 80%;
+    max-width: 100%;
+    height: 150px;
+    padding: 20px;
+    border: none;
+    font-size: 32px;
+    font-family: var(--fuente-inter);
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    outline: none;
+    margin-bottom: 20px;
+    resize: none;
+    overflow: hidden; /* Oculta la barra de desplazamiento */
 }
 
-.presentacion_contenido_titulo{
-    font-size: 2rem;
+.entrada::placeholder {
+    font-size: 32px;
     font-family: var(--fuente-inter);
     color: var(--color-secundario);
     font-weight: 400;
+    text-align: left;
 }
 
-.accion{
+.nota {
+    font-size: 14px;
+    font-family: var(--fuente-inter);
+    color: var(--color-quinto);
+    margin-bottom: 16px;
+    margin-top: 300px;
+}
+
+.accion {
+    margin-left: 25px;
     display: flex;
-    flex-direction:row;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 }
 
-.textarea{
-    width: 120%;
-    max-width: 120%;
-    padding: 140px;
-    border: none;
-    box-sizing: border-box;
-    font-family: var(--fuente-inter);
-    font-size: 16px;
-    justify-content: left;
-}
-
-.boton_1{
+.boton_1 {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 50%;
+    width: 180%;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 25px;
     border: none;
     background-color: var(--color-secundario);
-    font-size: 1.0rem;
+    font-size: 16px;
     font-weight: 350;
-    padding: 15.6px 0;
+    padding: 26px 130px;
     text-decoration: none;
     color: var(--color-cuarto);
     font-family: var(--fuente-inter);
 }
 
-.boton_2{
+.boton_2 {
     display: flex;
     justify-content: center;
     gap: 16px;
     width: 50%;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 25px;
     border-color: var(--color-secundario);
-    font-size: 1.0rem;
+    font-size: 16px;
     font-weight: 350;
-    padding: 15.6px 0;
+    padding: 26px 130px;
     text-decoration: none;
     color: var(--color-secundario);
     font-family: var(--fuente-inter);
+}
+
+.textbox {
+    margin-top: -100px;
+    margin-left: 200px;
+    height: 730px;
+    width: 350px;
+    padding: 10px;
+    background-color: var(--color-cuarto);
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    font-size: 24px;
+    font-family: var(--fuente-inter);
+    color: var(--color-quinto);
+}
+
+.parrafo_1 {
+    font-family: var(--fuente-inter);
+    font-size: 24px;
+    color: var(--color-quinto);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.parrafo_2 {
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    color: var (--color-quinto);
+    text-align: center;
+}
+
+.boton_3 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    border-radius: 25px;
+    border-color: var(--color-secundario);
+    font-size: 16px;
+    font-weight: 350;
+    padding: 25px 140px;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    margin-top: 560px;
 }
